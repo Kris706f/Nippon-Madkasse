@@ -1,0 +1,139 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f0ede9;
+}
+h1{
+    font-family: 'Avenir', sans-serif;
+    text-align: center;
+    font-size: 100px;  
+    text-transform: uppercase;                                 
+}
+h2{
+    font-family: 'Avenir', sans-serif;
+    text-align: center; 
+    text-transform: uppercase;
+    font-size: 20px; 
+    letter-spacing: 15px;                             
+}
+.overskrift{
+    margin-top: 200px;
+}
+.overskrift button{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 10%;
+}
+
+
+/*Alt herunder hører til selve Header*/
+header{
+    width: 100%;
+    background-color: #f0ede9;
+    display: flex;
+    border-bottom: solid 2px black;
+}
+.venstre{
+    padding: 5px;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    background-color: #bc002d;
+}
+.højre{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    padding: 5px;
+}
+.brugerikon{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+.kurvikon{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+/*Herunder er css til knapperne*/
+.roedknap{
+    background-color: #bc002d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+}
+.roedknap h3{
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+/*Alt herunder hører til selve området hvor de 4 madkasser er*/
+.firekasser{
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+}
+.tokasser{
+    height: 100px;
+    width: 50%;
+}
+.lyskasseEt{
+    background-color: #f0ede9;
+    height: 350px;
+    width: 100%;
+    background-image: url(images/testbillede.jpg);
+    background-size: cover;
+}
+.morkkasseEt{
+    background-color: #C7BDB1;
+    height: 350px;
+    width: 100%;
+}
+.lyskasseTo{
+    background-color: #f0ede9;
+    height: 350px;
+    width: 100%;
+}
+.morkkasseTo{
+    background-color: #C7BDB1;
+    height: 350px;
+    width: 100%;
+}
+.infotekst{
+    background-color:#f0ede9;
+    width: 60%;
+    position: relative;
+    left: 5%;
+    top: 40%;
+}
+.infotekst h4{
+    font-size: 40px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 5%;
+    font-weight: 100;
+}
+.infotekst h5{
+    font-size: 15px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 5%;
+    font-weight: 100;
+}
