@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Nippon</title>
 </head>
 <header>
     <div class="venstre">
         <div class="logo">
-
+            <a href="index.html"><img id="logolaptop" src="images/2logo50x150.png" alt=""></a>
+            <a href="index.html"><img id="logomobil" src="images/1logo50x150.png" alt=""></a>
         </div>
     </div>
     <div class="højre">
+        <button class="hamburger is-active">
+            <div class="bar"></div>
+        </button>
         <div class="brugerikon">
-
+            <a href="#"><img src="images/ikon_profil.svg" alt=""></a>
         </div>
         <div class="kurvikon">
-
+            <a href="#"><img src="images/ikon_kurv.svg" alt=""></a>
         </div>
     </div>
 </header>
+    <nav class="mobile-nav">
+        <a href="#">Forside</a>
+        <a href="#">Om os</a>
+        <a href="#">Profil</a>
+        <a href="#">Indkøbskurv</a>
+    </nav>
 <body>
     <!--Denne sektion er kun til selve overskrifter-->
     <section class="overskrift">
@@ -39,7 +50,7 @@
             <div class="lyskasseEt">
                 <section class="infotekst">
                     <h4>Vegetarkassen</h4>
-                    <h5>Pris pr. person</h5>
+                    <h5>Pris pr. person 370,-</h5>
                     <button class="roedknap">
                         <h3>Læs Mere</h3>
                     </button>
@@ -49,7 +60,7 @@
             <div class="morkkasseEt">
                 <section class="infotekst">
                     <h4>Diabeteskassen</h4>
-                    <h5>Pris pr. person</h5>
+                    <h5>Pris pr. person 595,-</h5>
                     <button class="roedknap">
                         <h3>Læs Mere</h3>
                     </button>
@@ -63,7 +74,7 @@
             <div class="morkkasseTo">
                 <section class="infotekst">
                     <h4>Livsnyderkassen</h4>
-                    <h5>Pris pr. person</h5>
+                    <h5>Pris pr. person 395,-</h5>
                     <button class="roedknap">
                         <h3>Læs Mere</h3>
                     </button>
@@ -73,7 +84,7 @@
             <div class="lyskasseTo">
                 <section class="infotekst">
                     <h4>Favoritkassen</h4>
-                    <h5>Pris pr. person</h5>
+                    <h5>Pris pr. person 565,-</h5>
                     <button class="roedknap">
                         <h3>Læs Mere</h3>
                     </button>
@@ -99,10 +110,12 @@
             </div>
         </div>
         <div class="links">
-
+            <a href="#">Kontakt</a> /
+            <a href="#">Privatpolitik</a> /
+            <a href="#">Nyheder</a>
         </div>
         <div class="adresse">
-
+            <h6>Nippon Måltidskasser Ringvej Syd 30</h6>
         </div>
     </footer>
 </body>
