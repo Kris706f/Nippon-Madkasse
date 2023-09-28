@@ -267,6 +267,16 @@ footer{
     .kurvikon{
         display: none;
     }
+    .hamburger{
+        display: block;
+    }
+    .infotekst h4{
+        font-size: 30px;
+    }
+    
+    .overskrift .roedknap{
+        width: 120px;
+    }
 }
 
 
@@ -277,5 +287,8 @@ footer{
     }
     #logolaptop{
         display: block;
+    }
+    .hamburger{
+        display: none;
     }
 }
