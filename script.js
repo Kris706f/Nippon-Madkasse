@@ -13,6 +13,8 @@ menu_btn.addEventListener('click', function(){
 
 let currentSection = "";
 
+/*Herunder er det som skal bruges til Info, Nærring og Menu*/
+
 function showSection(sectionId) {
     if (currentSection !== "") {
         document.getElementById(currentSection).classList.remove('active');
