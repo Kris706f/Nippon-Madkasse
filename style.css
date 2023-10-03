@@ -224,6 +224,7 @@ footer{
     background-color: #f0ede9;
     width: 100%;
     height: 200px;
+    padding-top: 5%;
 }
 .ikoner{
     display: flex;
@@ -331,6 +332,59 @@ footer{
     display: flex;
 }
 
+.boksTo td{
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    padding: 15px 15px;
+}
+.boksTo th{
+    font-size: 35px;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+}
+.boksTo table{
+    width: 90%;
+    padding-left: 5%;
+
+}
+.boksTre{
+    padding-left: 5%;
+}
+.boksTre h1{
+    font-family: 'Avenir', sans-serif;
+    text-align: left;
+    font-size: 35px;
+    text-transform: none;
+}
+.boksTre h2{
+    text-align: left;
+    font-family: 'Avenir', sans-serif;
+    font-size: 15px;
+    letter-spacing: normal;
+    width: 50%;
+    text-transform: none;
+    font-weight: 100;
+}
+.boksTre h3{
+    padding-top: 2%;
+    font-family: 'Avenir', sans-serif;
+}
+.boksTre li{
+    font-family: 'Avenir', sans-serif;
+}
+.boksTre img{
+    padding-top: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 10%;
+}
 
 
 
