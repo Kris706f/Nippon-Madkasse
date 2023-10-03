@@ -10,3 +10,22 @@ menu_btn.addEventListener('click', function(){
     menu_btn.classList.toggle('is-active');
     mobile_menu.classList.toggle('is-active');
 });
+
+let currentSection = "";
+
+function showSection(sectionId) {
+    if (currentSection !== "") {
+        document.getElementById(currentSection).classList.remove('active');
+    }
+    document.getElementById(sectionId).classList.add('active');
+    currentSection = sectionId;
+}
+showSection('info');
+
+
+
+
+
+
+
+
