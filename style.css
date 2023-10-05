@@ -650,7 +650,59 @@ og det under --*/
         margin-top: 3%;
         margin-bottom: 3%;
     }
+    /*Indkøbskurv*/
+    .overskrift h1{
+        font-size: 50px;
+    }
+    .overskrift h2{
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+    .kassenavn{
+        width: 40%;
 
+    }
+    .kassenavn h4{
+        font-size: 20px;
+    }
+    .kassenavn h5{
+        font-size: 10px;
+    }
+    .rundbillede{
+        width: 100px;
+        height: 100px;
+        margin-top: 8%;
+    }
+    .antal{
+        width: 20%;
+    }
+    .levering{
+        width: 100%;
+        margin: 0;
+    }
+    .levering h5{
+        font-size: 12px;
+    }
+    textarea{
+        width: 90%;
+    }
+    .kurvbund h5{
+        font-size: 20px;
+    }
+    .kurvhøjre .roedknap{
+        margin-top: 20%;
+        width: 110%;
+    }
+    .morkkasseEt{
+        background-color: #C7BDB1;
+    }
+    .morkkasseTo{
+        background-color: #f0ede9;
+    }
+    .lyskasseTo{
+        background-color: #C7BDB1;
+    }
+    
 }
 
 
