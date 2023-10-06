@@ -29,13 +29,13 @@ h2{
     letter-spacing: 15px;                             
 }
 .overskrift{
-    margin-top: 200px;
+    margin-top: 50px;
 }
 .overskrift button{
+    width: fit-content;
     position: absolute;
-    top: 70%;
     left: 45%;
-    width: 10%;
+    margin-top: 4%;
 }
 .toknapper{
     display: flex;
@@ -47,6 +47,25 @@ h2{
 .toknapper button{
     width: 200px;
 }
+/*HOVER effekter*/
+.roedknap:hover{
+    border: #bc002d 1px solid;
+    transition: 0.5s;
+    background-color: transparent;
+    color: #bc002d;
+}
+.roedknap h3:hover{
+    color: #bc002d;
+}
+a .roedknap:hover{
+    color: #bc002d;
+}
+
+
+
+
+
+
 
 /*Alt herunder hører til selve Header*/
 header{
@@ -147,6 +166,7 @@ header{
     cursor: pointer;
     border-radius: 4px;
     letter-spacing: 2px;
+    color: #fff;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
 }
 .roedknap h3{
@@ -154,6 +174,7 @@ header{
     text-transform: uppercase;
     color: #fff;
 }
+
 
 
 
@@ -307,6 +328,7 @@ footer{
 }
 
 /*Herunder er css til bokstekst og indhold*/
+
 .boksEt{
     width: 100%;
     height: 400px;
@@ -320,6 +342,7 @@ footer{
     font-family: 'Avenir', sans-serif;
     font-size: 25px;
     font-weight: 300;
+    line-height: 50px;
 }
 .boksTo p{
     padding-top: 5%;
@@ -327,6 +350,7 @@ footer{
     font-family: 'Avenir', sans-serif;
     font-size: 25px;
     font-weight: 300;
+    line-height: 50px;
 }
 .boksTo{
     width: 100%;
@@ -343,11 +367,10 @@ footer{
     padding: 15px 15px;
 }
 .boksTo th{
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Avenir', sans-serif;
     font-weight: 600;
     text-align: left;
-    text-transform: uppercase;
 }
 .boksTo table{
     width: 90%;
@@ -360,7 +383,7 @@ footer{
 .boksTre h1{
     font-family: 'Avenir', sans-serif;
     text-align: left;
-    font-size: 35px;
+    font-size: 25px;
     text-transform: none;
 }
 .boksTre h2{
@@ -446,13 +469,11 @@ footer{
 }
 .antal{
     height: 100%;
-    width: 20%;
+    margin-top: 50px;
 }
 /*---Stadigvæk css til indkøbskurv, men bare fokus på selve den
 boks hvor man vælger antal herunde*/
-.container {
-   margin-top: 50px;
-}
+
 
 input[type="number"] {
     text-align: center;
@@ -533,7 +554,114 @@ og det under --*/
 .kurvvenstre h5{
     padding-bottom: 9%;
 }
+/*-----------------------Herunder er CSS til Profil-----------------------------------*/
+.profile {
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+}
 
+.profile-text {
+    text-align: left;
+    margin-top: 20px;
+    flex: 2;
+}
+
+.profile-text h2 {
+    font-size: 35px;
+    margin: 0;
+    text-align: left;
+}
+.profile-text h3 {
+    font-size: 70px;
+    margin: 0;
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
+}
+
+.profilbilled {
+    text-align: center;
+    flex: 1;
+}
+
+.profilbilled img {
+    border-radius: 50%;
+    max-width: 280px;
+    margin-top: 30px;
+    display: block;
+}
+
+.profile-info {
+    text-align: left;
+    margin-left: 150px; 
+    font-family: 'Avenir', sans-serif;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin: 10px 0; 
+    margin-bottom: 33px;
+    font-family: 'Avenir', sans-serif;
+    font-weight: lighter;
+}
+.delivery-box {
+    background-color: #C7BDB1;
+    color: #fafafa;
+    padding: 18px;
+    margin: 66px auto; 
+    max-width: 1175px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+.delivery-text {
+    flex-grow: 1;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.delivery-text p {
+    margin-bottom: 15px;
+    font-size: larger;
+}
+    
+
+.delivery-button {
+    text-align: right;
+    padding-right: 35px;
+
+}
+
+
+.change-delivery-button {
+    background-color: #F0EDE9;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    display: block;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800;
+}
+
+.profile-actions button {
+    margin: 10px;
+
+}
 
 /*---------------------------Responsive------------------*/
 /*--MOBIL LAYOUT--*/
@@ -564,12 +692,13 @@ og det under --*/
     }
     
     .overskrift button{
-        width: 30%;
-        margin-bottom: 50%;
+        width: fit-content;
         position: absolute;
-        top: 55%;
         left: 35%;
+        margin-top: 4%;
     }
+    
+
     .lyskasseEt{
         background-color: #f0ede9;
         height: 260px;
@@ -640,10 +769,10 @@ og det under --*/
         margin-top: 2%;
     }
     .boksTo th{
-        font-size: 20px;
+        font-size: 15px;
     }
     .boksTo td{
-        font-size: 15px;
+        font-size: 12px;
     }
     .boksTre h2{
         width: 80%;
@@ -702,7 +831,29 @@ og det under --*/
     .lyskasseTo{
         background-color: #C7BDB1;
     }
-    
+    /*Profil siden*/
+    .profile-text h2{
+        font-size: 35px;
+        margin-left: 4%;
+    }
+    .profile-text h3{
+        font-size: 25px;
+        margin-left: 4%;
+    }
+    .profilbilled{
+        margin-left: 15%;
+    }
+    .profile-info{
+        width: fit-content;
+        margin-left: 70px;
+    }
+    .profile-info p{
+        font-size: 15px;
+        width: 100%;
+    }
+    .delivery-text{
+        font-size: 15px;
+    }
 }
 
 
