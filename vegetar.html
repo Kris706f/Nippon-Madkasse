@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script>
+        // Automatically show the "Info" tab on page load
+        window.addEventListener('load', function () {
+            showSection('info');
+        });
+    </script>
     <title>Nippon</title>
 </head>
 <header>
     <div class="venstre">
         <div class="logo">
-            <a href="index.html"><img id="logolaptop" src="images/2logo50x150.png" alt="nippon logo"></a>
-            <a href="index.html"><img id="logomobil" src="images/1logo50x150.png" alt="nippon logo"></a>
+            <a href="index.html"><img id="logolaptop" src="images/2logo50x150.png" alt="Nippon logo"></a>
+            <a href="index.html"><img id="logomobil" src="images/1logo50x150.png" alt="Nippon logo"></a>
         </div>
     </div>
     <div class="højre">
@@ -19,10 +25,10 @@
             <div class="bar"></div>
         </button>
         <div class="brugerikon">
-            <a href="profil.html"><img src="images/ikon_profil.svg" alt="ikon profil"></a>
+            <a href="profil.html"><img src="images/ikon_profil.svg" alt="Bruger ikon"></a>
         </div>
         <div class="kurvikon">
-            <a href="tomkurv.html"><img src="images/ikon_kurv.svg" alt="ikon kurv"></a>
+            <a href="tomkurv.html"><img src="images/ikon_kurv.svg" alt="Kurv ikon"></a>
         </div>
     </div>
 </header>
@@ -50,9 +56,15 @@
         </div>
     </section>
     <div class="nav">
-        <a href="#" class="nav-link" onclick="showSection('info')">Info</a>
-        <a href="#" class="nav-link" onclick="showSection('naering')">Nærring</a>
-        <a href="#" class="nav-link" onclick="showSection('menu')">Menu</a>
+        <a href="#" class="nav-link" onmouseover="showSection('info')">
+            <span class="tab-text">Info</span>
+        </a>
+        <a href="#" class="nav-link" onmouseover="showSection('naering')">
+            <span class="tab-text">Næring</span>
+        </a>
+        <a href="#" class="nav-link" onmouseover="showSection('menu')">
+            <span class="tab-text">Menu</span>
+        </a>
     </div>
 <body>
 
@@ -65,18 +77,18 @@
                 af japansk køkkenkunst. Her finder du en bred 
                 vifte af smagsfulde retter, der tilfredsstiller 
                 både dine smagsløg og dit ønske om en kødfri kost.</p>
-            <img class="laptopskaal" src="images/vegetarhøjre.png" alt="vegetar mad billede">
+            <img class="laptopskaal" src="images/vegetarhøjre.png" alt="Vegetar mad billede">
         </div>
         
         <div class="boksTo">
-            <img class="laptopskaal" src="images/vegetarvenstre.png" alt="vegetar mad billede">
+            <img class="laptopskaal" src="images/vegetarvenstre.png" alt="Vegetar mad billede">
             <p>Uanset hvilken kasse du vælger, kan du være sikker på, 
                 at vores mål er at levere den bedste kvalitet og autentiske 
                 smag af Japan direkte til din dørtrin. Udforsk vores udvalg 
                 af madbokse, og lad os tage dig med på en uforglemmelig 
                 rejse gennem japansk madkunst.</p>
         </div>
-        <img class="mobilskaal" src="images/vegetarvenstre.png" alt="vegetar mad billede">
+        <img class="mobilskaal" src="images/vegetarvenstre.png" alt="Vegetar mad billede">
         
     </section>
 
@@ -150,7 +162,7 @@
                 <li>Bønnespirer</li>
                 <li>Olivenolie</li>
             </ul>
-            <img src="images/video.png" alt="opskrift video">
+            <img src="images/video.png" alt="Opskrift video">
         </div>
         <div class="boksTre">
             <h1>Ramen</h1>
@@ -172,7 +184,7 @@
                 <li>Gulerødder</li>
                 <li>lyse sesamfrø</li>
             </ul>
-            <img src="images/video.png" alt="opskrift video">
+            <img src="images/video.png" alt="Opskrift video">
         </div>
     </section>
 
@@ -191,7 +203,7 @@
                 <a href="https://www.instagram.com/"><img src="images/instalog.png" alt="instagram logo"></a>
             </div>
             <div class="pladsholderikon">
-                <a href="https://twitter.com/"><img src="images/twitterlogo.png" alt="twitter el. X logo></a>
+                <a href="https://twitter.com/"><img src="images/twitterlogo.png" alt="twitter logo"></a>
             </div>
         </div>
         <div class="links">

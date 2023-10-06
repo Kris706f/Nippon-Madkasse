@@ -61,6 +61,67 @@ a .roedknap:hover{
     color: #bc002d;
 }
 
+/*----------------Herunder er til hover ved info, næring og menu*---------------/
+/* Add a rounded black outline to the tabs upon hover and when selected */
+.nav-link:hover,
+.nav-link.active {
+  border: 1px solid black;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Style for the tab when it is selected */
+.nav-link.active {
+  background-color: #ccc; /* Change the background color when selected */
+  color: #000; /* Change the text color when selected */
+}
+/* Initially hide all tab content */
+.bokstekst {
+    display: none;
+  }
+  
+  /* Show the content of the tab when the tab is hovered */
+  .nav-link:hover + .bokstekst {
+    display: block;
+  }
+  
+.bokstekst.active {
+    display: block;
+}
+/* Style for the tab text */
+.tab-text {
+    position: relative;
+    color: black; /* Set the text color */
+    padding: 5px 15px; /* Adjust the padding to control space */
+  }
+  
+  /* Add an upside-down U outline effect to the tab text */
+  .tab-text::before,
+  .tab-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: all 0.3s ease;
+  }
+  
+  /* Adjust the space between the line and the tab text */
+  .tab-text::before {
+    left: -5px; /* Adjust as needed */
+  }
+  
+  .tab-text::after {
+    right: -5px; /* Adjust as needed */
+  }
+  
+  /* Show the line with opacity when the tab is hovered */
+  .nav-link:hover .tab-text::before,
+  .nav-link:hover .tab-text::after {
+    width: calc(100% + 10px); /* Adjust as needed */
+    opacity: 1; /* Fade in with 0.3s transition on hover */
+  }
 
 
 
@@ -389,7 +450,7 @@ footer{
 .boksTre h2{
     text-align: left;
     font-family: 'Avenir', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: normal;
     width: 50%;
     text-transform: none;

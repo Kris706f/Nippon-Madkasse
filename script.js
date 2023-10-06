@@ -1,4 +1,26 @@
 
+/*Herunder er det som skal bruges til Info, Nærring og Menu*/
+
+function showSection(sectionId) {
+    const sections = document.querySelectorAll('.bokstekst');
+    const tabs = document.querySelectorAll('.nav-link');
+  
+    sections.forEach((section) => {
+      section.classList.remove('active');
+    });
+  
+    tabs.forEach((tab) => {
+      tab.classList.remove('active');
+    });
+  
+    const selectedSection = document.getElementById(sectionId);
+    const selectedTab = document.querySelector(`.nav-link[onclick="showSection('${sectionId}')"]`);
+  
+    selectedSection.classList.add('active');
+    selectedTab.classList.add('active');
+  }
+
+
 /*Herunder er det som skal bruges til burgermenu*/
 const menu_btn = document.querySelector('.hamburger');
 const mobile_menu = document.querySelector('.mobile-nav');
@@ -23,8 +45,5 @@ function showSection(sectionId) {
     currentSection = sectionId;
 }
 showSection('info');
-
-
-
 
 

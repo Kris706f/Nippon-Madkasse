@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script>
+        // Automatically show the "Info" tab on page load
+        window.addEventListener('load', function () {
+            showSection('info');
+        });
+    </script>
     <title>Nippon</title>
 </head>
 <header>
@@ -19,10 +25,10 @@
             <div class="bar"></div>
         </button>
         <div class="brugerikon">
-            <a href="profil.html"><img src="images/ikon_profil.svg" alt="profil ikon"></a>
+            <a href="profil.html"><img src="images/ikon_profil.svg" alt="Bruger ikon"></a>
         </div>
         <div class="kurvikon">
-            <a href="tomkurv.html"><img src="images/ikon_kurv.svg" alt="kurv ikon"></a>
+            <a href="tomkurv.html"><img src="images/ikon_kurv.svg" alt="Kurv ikon"></a>
         </div>
     </div>
 </header>
@@ -50,9 +56,15 @@
         </div>
     </section>
     <div class="nav">
-        <a href="#" class="nav-link" onclick="showSection('info')">Info</a>
-        <a href="#" class="nav-link" onclick="showSection('naering')">Nærring</a>
-        <a href="#" class="nav-link" onclick="showSection('menu')">Menu</a>
+        <a href="#" class="nav-link" onmouseover="showSection('info')">
+            <span class="tab-text">Info</span>
+        </a>
+        <a href="#" class="nav-link" onmouseover="showSection('naering')">
+            <span class="tab-text">Næring</span>
+        </a>
+        <a href="#" class="nav-link" onmouseover="showSection('menu')">
+            <span class="tab-text">Menu</span>
+        </a>
     </div>
 <body>
 
@@ -147,7 +159,7 @@
                 <li>Salt</li>
                 <li>Peber</li>
             </ul>
-            <img src="images/video.png" alt="opskrift video">
+            <img src="images/video.png" alt="Opskrift video">
         </div>
         <div class="boksTre">
             <h1>Svampebøffer med Misobagte Persillerødder</h1>
@@ -169,7 +181,7 @@
                 <li>Olivenolie</li>
                 <li>Æg</li>
             </ul>
-            <img src="images/video.png" alt="opskrift video">
+            <img src="images/video.png" alt="Opskrift video">
         </div>
     </section>
 
@@ -188,7 +200,7 @@
                 <a href="https://www.instagram.com/"><img src="images/instalog.png" alt="instagram logo"></a>
             </div>
             <div class="pladsholderikon">
-                <a href="https://twitter.com/"><img src="images/twitterlogo.png" alt="twitter el. X logo"></a>
+                <a href="https://twitter.com/"><img src="images/twitterlogo.png" alt="twitter logo"></a>
             </div>
         </div>
         <div class="links">
