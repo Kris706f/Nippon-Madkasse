@@ -38,6 +38,7 @@ h2{
     margin-top: 4%;
     text-decoration: none;
     font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
 }
 .toknapper{
     display: flex;
@@ -238,6 +239,8 @@ header{
     color: #fff;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
 }
 .profile-actions a{
     background-color: #bc002d;
@@ -528,6 +531,8 @@ footer{
     color: #fff;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
 }
 
 /*-------------Herunder vil jeg lave css til siden "Indkøbskurv"---------------*/
@@ -634,6 +639,8 @@ og det under --*/
     color: #fff;
     font-size: 20px;
     text-decoration: none;
+    font-family: 'Avenir', sans-serif;
+    text-transform: uppercase;
 }
 .kurvvenstre{
     width: 30%;
