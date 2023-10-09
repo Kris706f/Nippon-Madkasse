@@ -1,0 +1,13 @@
+user-agent:*
+allow:/index.html
+allow:/404.html
+allow:/diabet.html
+allow:/favorit.html
+allow:/kurvdiabet.html
+allow:/kurvfavorit.html
+allow:/kurvlivsnyder.html
+allow:/kurvvegetar.html
+allow:/livsnyder.html
+allow:/profil.html
+allow:/tomkurv.html
+allow:/vegetar.html

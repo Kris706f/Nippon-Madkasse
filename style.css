@@ -31,22 +31,22 @@ h2{
 .overskrift{
     margin-top: 50px;
 }
-.overskrift button{
+.overskrift a{
     width: fit-content;
     position: absolute;
     left: 45%;
     margin-top: 4%;
+    text-decoration: none;
+    font-family: 'Avenir', sans-serif;
 }
 .toknapper{
     display: flex;
     justify-content: space-evenly;
     padding-top: 2%;
     width: 40%;
-    margin-left: 30%;
 }
-.toknapper button{
-    width: 200px;
-}
+
+
 /*HOVER effekter*/
 .roedknap:hover{
     border: #bc002d 1px solid;
@@ -54,12 +54,10 @@ h2{
     background-color: transparent;
     color: #bc002d;
 }
-.roedknap h3:hover{
+.roedknap a:hover{
     color: #bc002d;
 }
-a .roedknap:hover{
-    color: #bc002d;
-}
+
 
 /*----------------Herunder er til hover ved info, næring og menu*---------------/
 /* Add a rounded black outline to the tabs upon hover and when selected */
@@ -230,10 +228,39 @@ header{
     color: #fff;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
 }
-.roedknap h3{
+.infotekst a{
+    background-color: #bc002d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    color: #fff;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+.profile-actions a{
+    background-color: #bc002d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    color: #fff;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-family: 'Avenir', sans-serif;
+}
+.toknapper a{
     font-family: 'Avenir', sans-serif;
     text-transform: uppercase;
     color: #fff;
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+}
+.toknapper{
+    width: 100%;
 }
 
 
@@ -489,10 +516,18 @@ footer{
     width: 40%;
     font-weight: 100;
 }
-.error .roedknap{
+.error a{
     justify-content: center;
     margin-bottom: 5%;
+    background-color: #bc002d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 2px;
     color: #fff;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 /*-------------Herunder vil jeg lave css til siden "Indkøbskurv"---------------*/
@@ -595,8 +630,10 @@ og det under --*/
 .kurvhøjre h5{
     padding-bottom: 8%;
 }
-.kurvhøjre button{
+.kurvhøjre a{
     color: #fff;
+    font-size: 20px;
+    text-decoration: none;
 }
 .kurvvenstre{
     width: 30%;
@@ -716,10 +753,10 @@ og det under --*/
     display: flex;
     justify-content: center;
     margin: 20px auto;
-    max-width: 800;
+    max-width: 800px;
 }
 
-.profile-actions button {
+.profile-actions a {
     margin: 10px;
 
 }
@@ -752,10 +789,10 @@ og det under --*/
         font-size: 30px;
     }
     
-    .overskrift button{
+    .overskrift a{
         width: fit-content;
         position: absolute;
-        left: 35%;
+        left: 40%;
         margin-top: 4%;
     }
     
@@ -791,20 +828,20 @@ og det under --*/
     .error img{
        width: 70%;
     }
-    .error .roedknap{
+    .error a{
         margin-top: 5%;
+    
     }
     .error h3{
         width: 70%;
+        margin-bottom: 10%;
     }
     /*--Herunder er responsive til kasse siderne--*/
     .kasseoverskrift h1{
         font-size: 35px;
     }
-    .toknapper button{
-        font-size: 10px;
-        justify-content: space-between;
-        width: 150px;
+    .toknapper a{
+        font-size: 15px;
         margin: 5px;
     }
     .boksEt{
@@ -879,9 +916,9 @@ og det under --*/
     .kurvbund h5{
         font-size: 20px;
     }
-    .kurvhøjre .roedknap{
-        margin-top: 20%;
-        width: 110%;
+    .kurvhøjre{
+        margin-top: 5%;
+        width: fit-content;
     }
     .morkkasseEt{
         background-color: #C7BDB1;
@@ -913,7 +950,12 @@ og det under --*/
         width: 100%;
     }
     .delivery-text{
-        font-size: 15px;
+        font-size: 12px;
+    }
+    .profile-actions{
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
     }
 }
 
